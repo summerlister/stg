@@ -44,6 +44,7 @@ resource "azurerm_storage_account" "stg" {
   location                 = var.LOCATION
   account_tier             = var.TIER
   account_replication_type = var.REPLICATION
+  public_network_access_enabled = var.PUBLIC_ACCESS
 
   network_rules {
     default_action             = var.NETWORK_ACTION

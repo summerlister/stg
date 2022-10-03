@@ -13,6 +13,9 @@ variable "TIER" {
 variable "REPLICATION" {
   description = ""
 }
+variable "PUBLIC_ACCESS" {
+  default = false
+}
 variable "NETWORK_ACTION" {
   default = "Deny"
   description = ""
