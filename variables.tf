@@ -1,6 +1,8 @@
 variable "STG_NAME" {
   description = ""
 }
+variable "ENV" {}
+
 variable "RESOURCE_GROUP" {
   description = ""
 }
@@ -12,6 +14,26 @@ variable "TIER" {
 }
 variable "REPLICATION" {
   description = ""
+}
+variable "KIND" {
+  description = ""
+}
+variable "HNS" {
+  default = false
+}
+variable "VNET_NAME" {}
+
+variable "PRIV_END_SUBNET" {
+  description = ""
+}
+variable "DNS_RG" {
+  description = ""
+}
+variable "BLOB_VERSIONING" {
+  default = true
+}
+variable "BLOB_RETENTION" {
+  default = 7
 }
 variable "PUBLIC_ACCESS" {
   default = false
